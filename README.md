@@ -1,65 +1,86 @@
 # atom-react-snippets README
 
-This is the README for your extension "atom-react-snippets". After writing up a brief description, we recommend including the following sections.
+This is a conversion of webbushka's [atom-react-snippets](https://github.com/webbushka/atom-react-snippets) package for Atom into a VS Code Extension.
 
-## Features
+I made this because I made the switch from Atom to VS Code, but my fingers don't want to forget all those old snippets.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Snippets
 
-For example if there is an image subfolder under your extension project workspace:
+The `→` means the `TAB` key
 
-\!\[feature X\]\(images/feature-x.png\)
+|     Trigger | Content                                             |
+| ----------: | --------------------------------------------------- |
+|       `_i→` | import empty                                        |
+|      `_ir→` | import react                                        |
+|     `_irc→` | import react and component                          |
+|     `_irp→` | import react and prop-types                         |
+|     `_ipt→` | import prop-types                                   |
+|    `_ircp→` | import react, component and prop-types              |
+|     `_ird→` | import react-dom                                    |
+|      `_ex→` | export                                              |
+|     `_exd→` | export default                                      |
+|     `_cdm→` | `componentDidMount method`                          |
+|     `_cwm→` | `componentWillMount method`                         |
+|     `_cwr→` | `componentWillReceiveProps method`                  |
+|     `_scu→` | `shouldComponentUpdate method`                      |
+|    `_cwup→` | `componentWillUpdate method`                        |
+|    `_cdup→` | `componentDidUpdate method`                         |
+|    `_cwun→` | `componentWillUnmount method`                       |
+|     `_cdc→` | `componentDidCatch method`                          |
+|      `_cx→` | `cx`                                                |
+|     `_fup→` | `forceUpdate`                                       |
+|     `_cct→` | component contextTypes                              |
+|     `_cpt→` | component propTypes                                 |
+|     `_cdp→` | component defaultProps                              |
+|    `_scct→` | static component contextTypes                       |
+|    `_scpt→` | static component propTypes                          |
+|    `_scdp→` | static component defaultProps                       |
+|     `_cer→` | class component skeleton                            |
+|     `_rsc→` | stateless component skeleton                        |
+|    `_rscp→` | stateless component skeleton with PropTypes         |
+|    `_rscr→` | stateless component skeleton with explicit `return` |
+|    `_rscc→` | stateless component skeleton with `handleClick`     |
+|     `_rsf→` | stateless function                                  |
+|     `_cdn→` | component display name                              |
+|     `_ren→` | `render() method`                                   |
+|     `_sst→` | `setState()`                                        |
+|   `_props→` | `this.props.`                                       |
+|   `_state→` | `this.state.`                                       |
+|     `_rrc→` | `React.render()`                                    |
+|    `_frag→` | `<React.Fragment></React.Fragment>`                 |
+|     `_cns→` | `constructor method`                                |
+|    `_clss→` | class extends                                       |
+| `_dnghtml→` | `dangerouslySetInnerHTML`                           |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+In this version the PropTypes snippets prefix has changed to `_pt` instead of `rp`. All snippets have two versions to allow for required and not required types.
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+|   Trigger | Content                                                                              |
+| --------: | ------------------------------------------------------------------------------------ |
+|   `_pta→` | `PropTypes.array,`                                                                   |
+|  `_ptar→` | `PropTypes.array.isRequired,`                                                        |
+|   `_ptb→` | `PropTypes.bool,`                                                                    |
+|  `_ptbr→` | `PropTypes.bool.isRequired,`                                                         |
+|   `_ptf→` | `PropTypes.func,`                                                                    |
+|  `_ptfr→` | `PropTypes.func.isRequired,`                                                         |
+|   `_ptn→` | `PropTypes.number,`                                                                  |
+|  `_ptnr→` | `PropTypes.number.isRequired,`                                                       |
+|   `_pto→` | `PropTypes.object.,`                                                                 |
+|  `_ptor→` | `PropTypes.object.isRequired,`                                                       |
+|   `_pts→` | `PropTypes.string,`                                                                  |
+|  `_ptsr→` | `PropTypes.string.isRequired,`                                                       |
+|  `_ptnd→` | `PropTypes.node,`                                                                    |
+| `_ptndr→` | `PropTypes.node.isRequired,`                                                         |
+|  `_ptel→` | `PropTypes.element,`                                                                 |
+| `_ptelr→` | `PropTypes.element.isRequired,`                                                      |
+|   `_pti→` | `PropTypes.instanceOf(ClassName),`                                                   |
+|  `_ptir→` | `PropTypes.instanceOf(ClassName).isRequired,`                                        |
+|   `_pte→` | `PropTypes.oneOf(['News', 'Photos']),`                                               |
+|  `_pter→` | `PropTypes.oneOf(['News', 'Photos']).isRequired,`                                    |
+|  `_ptet→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),`                         |
+| `_ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,`              |
+|  `_ptao→` | `PropTypes.arrayOf(PropTypes.number),`                                               |
+| `_ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,`                                    |
+|  `_ptoo→` | `PropTypes.objectOf(PropTypes.number),`                                              |
+| `_ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,`                                   |
+|  `_ptsh→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),`            |
+| `_ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |

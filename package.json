@@ -1,20 +1,21 @@
 {
-    "name": "atom-react-snippets",
-    "displayName": "atom-react-snippets",
-    "description": "Snippets for React, originally for Atom by webbushka",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.30.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "atom-react-snippets",
+  "publisher": "earhacker",
+  "displayName": "Atom React Snippets",
+  "description": "Snippets for React, originally for Atom by webbushka",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
