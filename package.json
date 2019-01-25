@@ -3,6 +3,10 @@
   "publisher": "earhacker",
   "displayName": "Atom React Snippets",
   "description": "Snippets for React, originally for Atom by webbushka",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajrussellaudio/vscode-atom-react-snippets"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.30.0"
