@@ -2,6 +2,8 @@
 
 This is a conversion of webbushka's [atom-react-snippets](https://github.com/webbushka/atom-react-snippets) package for Atom into a VS Code Extension.
 
+https://marketplace.visualstudio.com/items?itemName=earhacker.atom-react-snippets
+
 I made this because I made the switch from Atom to VS Code, but my fingers don't want to forget all those old snippets.
 
 ## Snippets
