@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/ajrussellaudio/vscode-atom-react-snippets"
   },
-  "version": "0.0.2",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.30.0"
   },
